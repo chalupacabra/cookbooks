@@ -17,8 +17,6 @@
 # limitations under the License.
 #
 
-include_recipe 'ruby'
-
 # install rvm api gem during chef compile phase
 gem_package 'rvm' do
   action :nothing
