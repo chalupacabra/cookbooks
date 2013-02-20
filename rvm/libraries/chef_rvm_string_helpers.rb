@@ -38,6 +38,7 @@ class Chef
       # @param [String, #to_s] the RVM Ruby string
       # @return [String] the gemset string, minus Ruby or nil if no gemset given
       def select_gemset(ruby_string)
+        return false unless ruby_string
         if ruby_string.include?('@')
           ruby_string.split('@').last
         else
