@@ -19,7 +19,7 @@ For more information on getting started with Cloud Formation, see [AWS Agility F
 
 **Manually Provisioned Instance**
 
-To get started without Cloud Formation, checkout the README in the [Intuit Chef Starter Repo](https://github.com/intuit/chef-repo/blob/master/README.md).
+To get started without Cloud Formation, checkout the README in the [AWS Cloud Formation Templates](https://github.com/intuit/cloud_formation_templates/blob/master/README.md).
 
 Contributing
 ------------
