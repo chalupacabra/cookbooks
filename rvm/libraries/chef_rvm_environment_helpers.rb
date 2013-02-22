@@ -39,6 +39,8 @@ class Chef
       # @param [String, #to_s] the fully qualified RVM ruby string
       # @return [Boolean] does this environment exist?
       def env_exists?(ruby_string)
+        return false unless ruby_string
+
         return true if system_ruby?(ruby_string)
 
         rubie   = select_ruby(ruby_string)

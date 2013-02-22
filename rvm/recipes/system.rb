@@ -17,7 +17,6 @@
 # limitations under the License.
 #
 
-include_recipe 'ruby'
 include_recipe "rvm::system_install"
 
 perform_install_rubies  = node['rvm']['install_rubies'] == true ||
