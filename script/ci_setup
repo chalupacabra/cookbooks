@@ -17,9 +17,6 @@ rvm use $RUBY_VERSION@cookbooks --create
 # Build, upload and authorize artifact
 gem install heirloom -v 0.10.1 --no-ri --no-rdoc
 
-# Install simple deploy gem
-gem install simple_deploy -v 0.7.1 --no-ri --no-rdoc
-
 # Reload RVM
 rvm reload
 
