@@ -5,6 +5,21 @@ if [ -f ~/.jenkins.sh ]; then
   . ~/.jenkins.sh
 fi
 
+# Set ruby version
+RUBY_VERSION=1.9.3-p385
+
+# Install ruby version
+rvm install ruby-$RUBY_VERSION
+
+# Set ruby / gemset
+rvm use $RUBY_VERSION@cookbooks --create
+
+# Build, upload and authorize artifact
+gem install heirloom -v 0.10.1 --no-ri --no-rdoc
+
+# Reload RVM
+rvm reload
+
 # Exit with error if any command returns non zero
 set -e
 
@@ -16,6 +31,4 @@ done
 echo "GIT_SHA=$GIT_COMMIT" > ./cookbooks/.build
 
 # Build and upload artifact
-# Cookbooks builds are set to public
-set +e ; rvm system ; set -e
 heirloom upload -n cookbooks -i $GIT_COMMIT -e .git -d . -p
