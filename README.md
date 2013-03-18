@@ -11,15 +11,9 @@ This library is meant to save engineers the hours invested by others to write co
 Getting Started
 ---------------
 
-**Cloud Formation**
+**Liftoff**
 
-The easiest way to get started is to launch the [Single Instance Baseline Template](https://github.com/intuit/cloud_formation_templates/blob/master/classic/single_instances/chef/base_instance_with_chef.json) from the [Cloud Formation Templates Repo](https://github.com/intuit/cloud_formation_templates).
-
-For more information on getting started with Cloud Formation, see [AWS Agility Framework Wiki](https://github.com/intuit/aws-agility-framework/wiki/Getting-Started)
-
-**Manually Provisioned Instance**
-
-To get started without Cloud Formation, checkout the README in the [AWS Cloud Formation Templates](https://github.com/intuit/cloud_formation_templates/blob/master/README.md).
+The easiest way to get started and see some cookbooks in action is to start with the README in [Liftoff](https://github.com/intuit/liftoff).
 
 Contributing
 ------------
