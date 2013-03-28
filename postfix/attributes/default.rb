@@ -16,8 +16,8 @@
 # limitations under the License.
 
 default['postfix']['mail_type']  = "client"
-default['postfix']['myhostname'] = fqdn
-default['postfix']['mydomain']   = domain ||= 'localhost' # Fix for VPC
+default['postfix']['myhostname'] = node['fqdn']
+default['postfix']['mydomain']   = node['domain'] ||= 'localhost' # Fix for VPC
 default['postfix']['myorigin']   = "$myhostname"
 default['postfix']['header_size_limit']   = "4096000"
 default['postfix']['relayhost']  = ""
